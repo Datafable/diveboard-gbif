@@ -2,23 +2,23 @@
 
 ## Root
 
-DwC term | Status|
---- | --- | --- 
+DwC term | Status | remark 
+--- | --- | ---
 type | OK
 modified | OK
-language | suggested
+language | suggested | `empty`
 rights | OK
 rightsHolder | OK
 accessRights | -
-bibliographicCitation | change: I would drop this field. 
+bibliographicCitation | change: I would drop this field. | `keep`
 references | OK
 institutionID | -
 collectionID | -
 datasetID | OK
 institutionCode | OK
 collectionCode | -
-datasetName | change: I propose: `Diveboard - Scuba diving citizen science`
-ownerInstitutionCode | suggested
+datasetName | OK
+ownerInstitutionCode | OK 
 basisOfRecord | OK
 informationWithheld | -
 dataGeneralizations | -
@@ -26,9 +26,9 @@ dynamicProperties | -
 
 ## Occurrence
 
-DwC term | Status
---- | ---
-occurrenceID | change: is `diveboard: 7_0_33102` an internal ID?
+DwC term | Status | remark
+--- | --- | ---
+occurrenceID | OK
 catalogNumber | OK
 occurrenceRemarks | -
 recordNumber | -
@@ -45,7 +45,7 @@ preparations | -
 disposition | -
 otherCatalogNumbers | -
 previousIdentifications | -
-associatedMedia | empty
+associatedMedia | `empty`
 associatedReferences | -
 associatedOccurrences | - 
 associatedSequences | -
@@ -53,52 +53,52 @@ associatedTaxa | -
 
 ## Event
 
-DwC term | Status
---- | ---
-eventID | empty
+DwC term | Status | remark
+--- | --- | ---
+eventID | `empty`
 samplingProtocol | -
 samplingEffort | -
-eventDate | change: format as `modified`, including time
-eventTime | remove
+eventDate | OK
+eventTime | OK
 startDayOfYear | -
 endDayOfYear | -
 year | -
 month | - 
 day | -
 verbatimEventDate | -
-habitat | empty
+habitat | `empty`
 fieldNumber | -
-fieldNotes | empty
-eventRemarks | empty
+fieldNotes | `empty` | something for later
+eventRemarks | `empty` | something for later
 
 ## Location
 
 DwC term | Status | remark
 --- | --- | ---
-locationID | suggested
-higherGeographyID | suggested
+locationID | -
+higherGeographyID | -
 higherGeography | -
-continent | empty
+continent | `empty`
 waterBody | OK
 islandGroup | -
 island | -
 country | OK
-countryCode | change: leave `BLANK` empty
+countryCode | OK
 stateProvince | -
 county | -
-municipality | remove
-locality | change: concatenate as `locality, municipality`
-verbatimLocality | -
+municipality | `removed` 
+locality | OK
+verbatimLocality | OK | `municipality, locality` concatenated
 verbatimElevation | -
-minimumElevationInMeters | empty
-maximumElevationInMeters | empty
+minimumElevationInMeters | OK
+maximumElevationInMeters | OK
 verbatimDepth | -
 minimumDepthInMeters | OK
-maximumDepthInMeters | change: why are number of decimals so varied? | DepthComputer and mistakes
+maximumDepthInMeters | OK | one digit after the `,`
 minimumDistanceAboveSurfaceInMeters | -
 maximumDistanceAboveSurfaceInMeters | -
-locationAccordingTo | suggested
-locationRemarks | empty
+locationAccordingTo | -
+locationRemarks | `empty`
 verbatimCoordinates | -
 verbatimLatitude | -
 verbatimLongitude | -
@@ -108,7 +108,7 @@ decimalLatitude | OK
 decimalLongitude | OK
 geodeticDatum | OK
 coordinateUncertaintyInMeters | OK
-coordinatePrecision | empty
+coordinatePrecision | -
 pointRadiusSpatialFit | -
 footprintWKT | -
 footprintSRS | -
@@ -139,37 +139,37 @@ n/a
 
 ## Taxon
 
-DwC term | Status
---- | ---
+DwC term | Status | remarks
+--- | --- | ---
 taxonID | empty
 scientificNameID | -
 acceptedNameUsageID | - 
 parentNameUsageID | -
 originalNameUsageID | -
-nameAccordingToID | empty
+nameAccordingToID | OK
 namePublishedInID | -
 taxonConceptID | -
 scientificName | OK
 acceptedNameUsage | -
 parentNameUsage | -
 originalNameUsage | -
-nameAccordingTo | change: 5 records with blank `scientificName` should be empty here has well.
+nameAccordingTo | OK
 namePublishedIn | -
 namePublishedInYear | -
 higherClassification | -
-kingdom | OK
-phylum | OK
-class | OK
-order | OK
-family | OK
-genus | empty
-subgenus | -
-specificEpithet | empty
-infraspecificEpithet | empty
-taxonRank | OK
+kingdom | OK | EOL
+phylum | OK | EOL
+class | OK | EOL
+order | OK | EOL
+family | OK | EOL
+genus | OK | EOL
+subgenus | `empty`
+specificEpithet | `empty`
+infraspecificEpithet | `empty`
+taxonRank | OK | EOL
 verbatimTaxonRank | -
-scientificNameAuthorship | empty
-vernacularName | empty
+scientificNameAuthorship | `empty`
+vernacularName | `empty`
 nomenclaturalCode | -
 taxonomicStatus | -
 nomenclaturalStatus | -
